@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@lizuz/mini-app-types':
-        specifier: ^1.0.9
-        version: 1.0.9
+        specifier: ^1.0.14
+        version: 1.0.14
       '@sveltejs/vite-plugin-svelte':
         specifier: ^7.2.0
         version: 7.2.0(svelte@5.56.8)(vite@8.2.0(@types/node@26.1.2)(jiti@2.7.0))
@@ -57,8 +57,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@lizuz/mini-app-types@1.0.9':
-    resolution: {integrity: sha512-fgDVOH4AE4iwVpheW6Jd5G9IvD2vzpc/FBwbNeww2w9gIhxgV4vvWy1k/Gg0cWh/2yFC7jx511tgk2BBYE/iUg==}
+  '@lizuz/mini-app-types@1.0.14':
+    resolution: {integrity: sha512-SiwQRX46/zltiUF6lU7DEPzVaeME7y39anXnWvQcic9VkhaV9poSMy20eUCcjihpQqNawKZA2/VXoM3JFe36Rg==}
 
   '@oxc-project/types@0.142.0':
     resolution: {integrity: sha512-7W+2q5AKQVU36fkaryontrHn3YDt1RyUYXatw9i5H8ocYe2sPKSFB6eS8WNPeRKiN1qAWWZUPm7gwFzJGrccqQ==}
@@ -650,7 +650,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@lizuz/mini-app-types@1.0.9': {}
+  '@lizuz/mini-app-types@1.0.14': {}
 
   '@oxc-project/types@0.142.0': {}
 
