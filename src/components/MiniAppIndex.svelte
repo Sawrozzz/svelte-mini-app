@@ -1,8 +1,9 @@
 <script lang="ts">
-  import { useT } from "../hooks/useT.svelte";
-  import { useAppearance } from "../hooks/useAppearance.svelte";
-  import { featurePages } from "./pages";
-  import type { Feature } from "../types";
+import { useT } from "../hooks/useT.svelte";
+import { useAppearance } from "../hooks/useAppearance.svelte";
+import { featurePages } from "./pages";
+import type { Feature } from "../types";
+import ImageGallery from "./ImageGallery.svelte";
 
   const featureBase = [{ id: "location", emoji: "📍" }];
 
@@ -141,6 +142,8 @@
           </button>
         {/each}
       </div>
+
+      <ImageGallery />
     </div>
   </div>
 {/if}
