@@ -1,12 +1,15 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-import tailwindcss from '@tailwindcss/vite';
-import { createManifest } from './src/utils/createManifest.ts';
+import tailwindcss from "@tailwindcss/vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from "vite";
+import { createManifest } from "./src/lib/createManifest.ts";
 
 export default defineConfig({
   plugins: [svelte(), tailwindcss(), createManifest()],
+  define: {
+    "process.env.NODE_ENV": JSON.stringify("production"),
+  },
   build: {
-    target: 'chrome89',
+    target: "chrome89",
     manifest: "manifest.json",
     outDir: "dist",
     cssCodeSplit: true,
@@ -20,9 +23,9 @@ export default defineConfig({
       output: {
         format: "es",
         chunkFileNames: "assets/[name]-[hash].js",
-        assetFileNames: "assets/[name]-[hash][extname]"
-      }
-    }
+        assetFileNames: "assets/[name]-[hash][extname]",
+      },
+    },
   },
   server: {
     host: "0.0.0.0",

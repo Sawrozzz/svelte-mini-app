@@ -1,20 +1,18 @@
 import type {
-  MiniAppSdkInterface,
-  PlatformUser,
-  DevicePermissionStatus,
-  DeviceLocationResult,
+  DeviceBiometricOptions,
+  DeviceBiometricResult,
   DeviceCameraResult,
-  DeviceGalleryResult,
-  DeviceFileResult,
+  DeviceContactResult,
   DeviceDownloadResult,
   DeviceExtraOptions,
-  DeviceContactResult,
-  DeviceBiometricResult,
-  DeviceBiometricOptions,
-  NavigationSdkModule,
+  DeviceFileResult,
+  DeviceGalleryResult,
+  DeviceLocationResult,
+  DevicePermissionStatus,
   FileModule,
-} from '@lizuz/mini-app-types';
-
+  MiniAppSdkInterface,
+  PlatformUser,
+} from "@lizuz/mini-app-types";
 
 declare global {
   type MiniAppSdk = MiniAppSdkInterface;
@@ -24,13 +22,12 @@ declare global {
   type SdkDeviceCameraResult = DeviceCameraResult;
   type SdkDeviceGalleryResult = DeviceGalleryResult;
   type SdkDeviceFileResult = DeviceFileResult;
-   type SdkDeviceDownloadResult = DeviceDownloadResult;
-   type SdkDeviceContactResult = DeviceContactResult;
+  type SdkDeviceDownloadResult = DeviceDownloadResult;
+  type SdkDeviceContactResult = DeviceContactResult;
   type SdkFileModule = FileModule;
   type SdkDeviceExtraOptions = DeviceExtraOptions;
   type SdkDeviceBiometricResult = DeviceBiometricResult;
   type SdkBiometricOptions = DeviceBiometricOptions;
-  type SdkNavigationModule = NavigationSdkModule;
 
   interface Window {
     __GSA_SDK__?: MiniAppSdk;
